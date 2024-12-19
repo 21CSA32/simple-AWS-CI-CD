@@ -12,7 +12,8 @@ phases:
   pre_build:
     commands:
       - echo "Installing dependencies..."
-      - pip install -r simple-python-app/blob/main/requirements.txt
+      - curl -o requirements.txt https://raw.githubusercontent.com/Nithish1641/simple-python-app/requirements.txt
+      - pip install -r simple-python-app/requirements.txt
   build:
     commands:
       - echo "Running tests..."
