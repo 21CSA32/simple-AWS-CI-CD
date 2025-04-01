@@ -7,4 +7,5 @@ def hello():
     return 'Hello, world!'
 
 if __name__ == '__main__':
-    app.run()
+    # Change this line to allow access from any IP
+    app.run(host='0.0.0.0', port=5000)
